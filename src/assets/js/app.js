@@ -31,21 +31,15 @@ $(document).foundation();
             playerc.play().then(function() {
                 $('.persons-name').delay(600).fadeIn().delay(3000).fadeOut();
                 $('.persons-message').delay(22000).fadeIn();
+                playerc.setMuted(false);
 
               }); 
 
-              playerc.getEnded().then(function(ended) {
-                $('.persons-message').fadeOut();
-                }).catch(function(error) {
-                    // an error occurred
-                });
-          });
+            }
+          )
 
-          
-        }
+        };
 
         
-
-
-
-
+          
+        

@@ -409,6 +409,7 @@ pre {
   .h1 {
     font-size: 47px;
     line-height: 47px;
+    font-weight: bold;
     @include breakpoint(small down) {
       font-size: 34px;
       line-height: 38px;
