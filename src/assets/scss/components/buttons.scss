@@ -1,0 +1,202 @@
+.button {
+    text-transform: uppercase;
+    font-weight   : 700;
+    border-radius : 10px !important;
+    padding: 18px 23px;
+    font-size: 17px;
+  
+  
+    .fa, .fab, .fad, .fal, .far, .fas {
+      margin-right: 5px;
+      margin-left: 5px;
+    }
+  
+    .fa-pulse:before {
+      color: #67ff3a;
+    }
+  }
+  
+  form .button.expanded {
+   
+      min-height: 60px;
+      font-size: 22px;
+      border-radius: 5px !important;
+  
+  }
+  
+  .square {
+    border-radius: 0 !important;
+  }
+  
+  body .button.square {
+      border-radius: 10px!important;
+  }
+  
+  form {
+    .button {
+      border-radius: 0 !important;
+    }
+  }
+  
+  .mega-menu {
+    .button {
+      border-radius : 0 !important;
+      text-transform: none;
+      font-weight   : 500;
+    }
+  }
+  
+  .event-button {
+  
+  
+      .fa {
+        font-size: 15px;
+        margin-right: 10px;
+        margin-left: 0px;
+      }
+    }
+  
+  .button {
+  
+    &:hover {
+      background-color: $core-blue !important;
+      color: white !important;
+    }
+  
+    &:active {
+      background-color: lighten($core-blue,8%) !important;
+      color: white !important;
+    }
+  
+    &:focus {
+      background-color: darken($core-blue,8%) !important;
+      color: white !important;
+    }
+  
+  
+    &.hollow {
+  
+      border-width: 2px;
+      border-color: $core-blue !important;
+      color: $core-blue !important;
+  
+      &:hover {
+        background-color: $core-blue !important;
+        color: white !important;
+      }
+  
+      &:active {
+        background-color: lighten($core-blue,8%) !important;
+        color: white !important;
+      }
+  
+      &:focus {
+        background-color: darken($core-blue,8%) !important;
+        color: white !important;
+      }
+  
+  
+      &.white {
+        border-color: #fff !important;
+        color       : #fff !important;
+  
+        &:hover {
+          background-color: white !important;
+          color: $core-blue !important;
+        }
+  
+        &:active {
+          background-color: lighten($white,8%) !important;
+          color: $core-blue !important;
+        }
+  
+        &:focus {
+          background-color: darken($white,8%) !important;
+          color: $core-blue !important;
+        }
+      }
+  
+  
+    }
+  }
+  
+  .bg-bright-blue,
+  .bg-sky-blue {
+    a.button:not(.success):not(.secondary):not(.alert) {
+      background-color: $core-blue !important;
+  
+      &:hover {
+        background-color: lighten($core-blue, 10%) !important;
+      }
+    }
+  }
+  
+  .light-grey-button {
+    background-color: #e4e4e4;
+    color:black;
+  }
+  
+  body .white-button {
+    background-color: #ffffff;
+    color:black !important;
+  
+    span {
+      color: black !important;
+    }
+  
+    &:hover {
+      color: white !important;
+  
+      span {
+        color: white !important;
+      }
+    }
+  
+    &:focus {
+      color: white !important;
+  
+      span {
+        color: white !important;
+      }
+    }
+  
+  
+  }
+  
+  
+  .button {
+    &.dark-button {
+  
+      border-width: 2px;
+      border-color: $core-blue !important;
+      color: white !important;
+      background-color: $core-blue !important;
+  
+      &:hover {
+        background-color: darken($core-blue,8%) !important;
+      }
+  
+      &:active {
+        background-color: lighten($core-blue,8%) !important;
+        color: white !important;
+      }
+  
+      &:focus {
+        background-color: darken($core-blue,8%) !important;
+        color: white !important;
+      }
+  
+  
+    }
+  }
+  
+  
+  @include breakpoint (small only) {
+  
+    .button {
+      font-size: 15px;
+      padding: 20px 15px;
+      width: 100%;
+    }
+  }
+  
