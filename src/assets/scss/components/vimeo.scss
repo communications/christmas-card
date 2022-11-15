@@ -302,9 +302,11 @@
 
   h1 {
     text-transform: capitalize;
-    line-height: 40px;
-    font-size: 40px;
+    line-height: 55px;
+    font-size: 55px;
     margin-bottom: 25px;
+    font-weight: bold;
+    margin-top: -2em;
   }
  
 
@@ -312,13 +314,13 @@
 
   .form-container, .content-container {
     display: block;
-    background-color: white;
-    color: black;
-    padding: 3em 2em 2em;
-    border-radius: 20px;
+    // background-color: rgba(255, 255, 255, 0.94);
+    color: white;
+    padding: 3em 4em 2em;
+    border-radius: 60px;
     margin: 15% auto;
     text-align: left;
-    box-shadow: 0 14px 28px rgba(0,0,0,0.25), 0 10px 10px rgba(0,0,0,0.22);
+    // box-shadow: 0 14px 28px rgba(0,0,0,0.25), 0 10px 10px rgba(0,0,0,0.22);
   }
 
   .content-container {
