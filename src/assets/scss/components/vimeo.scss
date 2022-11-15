@@ -325,6 +325,11 @@
 
   .content-container {
     text-align: center;
+
+    a {
+      color: white;
+      text-decoration: underline;
+    }
   }
 
   .form-container {
@@ -375,6 +380,7 @@
   overflow: hidden;
   z-index: 9;
   background-color: #010a2e;
+  display: none;
 
   .background-fill {
     position: absolute;
@@ -404,7 +410,6 @@
    top: 45%;
    left: 0;
    right: 0;
-   bottom: 0;
    width: 40%;
    max-width: 400px;
    z-index: 99999;
@@ -413,6 +418,8 @@
    text-align: center;
    text-transform: uppercase;
    display: none;
+   background-color: white;
+   padding: 20px;
 
    h1 {
     font-size: 60px;
@@ -421,6 +428,72 @@
 
   
  }
+
+
+ .card {
+  width: 0;
+  height: 0;
+  border-top: 100px solid #eee;
+  border-right: 170px solid #ddd;
+  border-bottom: 100px solid #ccc;
+  border-left: 170px solid #ccc;
+  display: inline-block;
+  border-radius: 20px;
+  transform: scale(1.5);
+}
+
+.heart {
+  width: 32px;
+  height: 32px;
+  background-color: #ff3838;
+  transform: translate(-50%, -50%) rotate(45deg);
+  animation: heartbeat 1.4s linear infinite;
+}
+
+.heart:before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: #ff3838;
+  transform: translateY(-50%);
+  border-radius: 50%;
+}
+
+.heart:after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: #ff3838;
+  transform: translateX(-50%);
+  border-radius: 50%;
+}
+
+.break{
+  left:6%;
+  top:23%;
+}
+
+@keyframes heartbeat {
+  0% { transform: translate(-50%, -50%) rotate(45deg) scale(1); }
+  25% { transform: translate(-50%, -50%) rotate(45deg) scale(1); }
+  30% { transform: translate(-50%, -50%) rotate(45deg) scale(1.4); }
+  50% { transform: translate(-50%, -50%) rotate(45deg) scale(1.2); }
+  70% { transform: translate(-50%, -50%) rotate(45deg) scale(1.4); }
+  100% { transform: translate(-50%, -50%) rotate(45deg) scale(1); }
+}
+
+.play-video {
+  margin-top: -253px !important;
+  font-size: 35px;
+    z-index: 9999;
+    position: relative;
+}
 
  .persons-message {
   position: absolute;
