@@ -28,13 +28,15 @@
   <div class="page-content">
      <div class="grid-container">
         <div class="grid-x grid-margin-x align-middle">
-           <div class="cell large-8 large-offset-2 small-10 small-offset-1 text-center content-container">
+           <div class="cell large-8 large-offset-2 small-10 small-offset-1 text-center content-container form-container">
+
+            
   
-              <h1>Standard Page contents</h1>
+              <!-- <h1>Standard Page contents</h1>
               <p>A standard Christmas greeting.</p>
               <p>A call to action leading to the facility to send a card to a friend or colleague.</p>
   
-              <a class="button white-button" href="">Create Your Card</a>
+              <a class="button white-button" href="">Create Your Card</a> -->
 
               <!-- <div class="persons-name">
                  <h1>Michael</h1>
@@ -46,6 +48,50 @@
                  <p>The Daro Team</p>
                  <a href="https://www.ulster.ac.uk/christmascard/asset-builder" class="button">Send your own Greeting</a>
               </div> -->
+
+              <form id="page_asset_builder_1069447" name="main_form" method="post" action="https://www.ulster.ac.uk/christmascard/asset-builder?" enctype="multipart/form-data" onsubmit="return form_on_submit()">
+               <input type="hidden" name="AB_1069447_ASSET_BUILDER_ACTION" value="create"  class="sq-form-field" id="AB_1069447_ASSET_BUILDER_ACTION" />
+   
+   
+         <input type="hidden" name="AB_1069447_ASSET_BUILDER_CREATE_TYPE" value="page_standard"  class="sq-form-field" id="AB_1069447_ASSET_BUILDER_CREATE_TYPE" /><input type="hidden" name="asset_action" value="create_custom"  class="sq-form-field" id="asset_action" /><div class="sq-asset-builder-tab-content" id="page_asset_builder_1069447_type_page_standard" style="display: block"><h1>Create Your Christmas Card</h1>
+   
+   <input type="text" name="check-one" value="" size="10" maxlength="10" class="hide" id="check-one" />
+   <label for="page_standard_0_636" class="hide">Asset name <span class="bl red">*</span></label>
+   <input type="hidden" name="page_standard_0_636" value="c3ce1e6b8b33a9976aef0d053a797576317804d2" size="35" class="sq-form-field sq-field_asset-name" required  id="page_standard_0_636" />
+   
+   <label for="metadata_field_text_1069527_value" class="hide">Your name <span class="bl">*</span></label>
+    <input type="text" name="metadata_field_text_1069527_value" value="Mike" size="30"  class="sq-form-field" id="metadata_field_text_1069527_value" />
+   
+   <div class="hide">
+     <label for="metadata_field_text_1069528_value">Your email <span class="bl">*</span></label>
+     <span>This needs to be an Ulster University Email address.</span>
+      <input type="text" name="metadata_field_text_1069528_value" value="m.durney@ulster.ac.uk" size="30"  class="sq-form-field" id="metadata_field_text_1069528_value" />
+   </div>
+   
+   <label for="metadata_field_text_1069528_value">Recipient name <span class="bl">*</span></label>
+    <input type="text" name="metadata_field_text_1069529_value" value="" size="30"  class="sq-form-field" id="metadata_field_text_1069529_value" />
+   
+   <label for="metadata_field_text_1069530_value">Recipient email <span class="bl">*</span></label>
+    <input type="text" name="metadata_field_text_1069530_value" value="" size="30"  class="sq-form-field" id="metadata_field_text_1069530_value" />
+   
+   <label for="metadata_field_text_1069531_value">Your message to the recipient <span class="bl">*</span></label>
+    <textarea name="metadata_field_text_1069531_value"  cols="60" rows="7"  class="sq-form-field" id="metadata_field_text_1069531_value" ></textarea>
+   
+   <label for="metadata_field_select_1069532">I have read the <a href="#">Terms and Conditions</a> <span class="bl">*</span></label>
+    <input type="hidden" name="metadata_field_select_1069532_posted" value="1"  class="sq-form-field" id="metadata_field_select_1069532_posted" />				<table cellpadding="0" cellspacing="0" border="0">
+               <tr>
+                                 <td>&nbsp;
+                     <input type="radio" name="metadata_field_select_1069532" value=""  id="metadata_field_select_1069532_" class="sq-form-field" /><label  for="metadata_field_select_1069532_">No, I have not read the them</label>						</td>
+                     </tr><tr>						<td>&nbsp;
+                     <input type="radio" name="metadata_field_select_1069532" value="yes" checked="checked"  id="metadata_field_select_1069532_yes" class="sq-form-field" /><label  for="metadata_field_select_1069532_yes">Yes, I have read the Terms and Conditions</label>						</td>
+                                    </tr>
+                  </table>
+                  
+  
+   <input type="hidden" name="sq_lock_release" value="0"  class="sq-form-field" id="sq_lock_release" /><input type="hidden" name="sq_committing" value="0"  class="sq-form-field" id="sq_committing" /><input type="button" name="sq_commit_button" id="sq_commit_button" value="Submit" accesskey="s" class="sq-form-field button sq-btn-green sq-commit-button" onclick="if (submit_form) { this.form.sq_committing.value = 1, submit_form(this.form, true); } else { this.form.submit(); this.disabled = 'disabled';}  " />
+   </div>				
+               
+            </form>
   
   
            </div>

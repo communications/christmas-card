@@ -312,7 +312,7 @@
 
 
 
-  .form-container, .content-container {
+   .content-container {
     display: block;
     // background-color: rgba(255, 255, 255, 0.94);
     color: white;
@@ -325,6 +325,27 @@
 
   .content-container {
     text-align: center;
+  }
+
+  .form-container {
+    padding: 4em 0em;
+    color: white;
+    text-align: left !important;
+
+    label {
+      color: white;
+    }
+
+    thead, tbody, tfoot, table,  tbody tr:nth-child(even), table tr, table td {
+      background-color: rgba(0,0,0,0);
+      border: 0px !important;
+      padding: 0px;
+    }
+  }
+
+ .page-content .button {
+    background-color: white;
+    color: $core-blue;
   }
 
   .page-content {
