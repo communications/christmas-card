@@ -37,7 +37,7 @@ $(document).foundation();
         player.ready().then(function() {
             player.setMuted(false);
             player.play();
-            $('.persons-name').delay(600).fadeIn().delay(3000).fadeOut();
+            $('.persons-name').delay(900).fadeIn().delay(3000).fadeOut();
             $('.persons-message').delay(22000).fadeIn();
         });
        
