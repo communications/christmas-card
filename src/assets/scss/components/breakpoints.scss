@@ -1,0 +1,58 @@
+@include breakpoint (small only) {
+
+    .christmas-card-page .content-container {
+        padding:0em;
+    }
+
+    .christmas-card-page h1 {
+        font-size: 35px;
+        line-height: 45px;
+    }
+
+    .christmas-card-page .content-container p {
+        max-width: 100%;
+    }
+
+    .christmas-card-page .grid-container, .christmas-card-page .grid-x, .christmas-card-page {
+        min-height: 100vh;
+    }
+
+    [type='checkbox'] + label[for], [type='radio'] + label[for] {
+        cursor: pointer;
+        font-family: "Open Sans",sans-serif !important;
+        font-weight: 300;
+        font-size: 14px;
+        line-height: 18px;
+        width: 80%;
+        margin-top: 7px;
+    }
+
+    .christmas-card-page .card {
+        transform: scale(0.9);
+    }
+
+    .christmas-card-page .content-container {
+        margin-top: -20px;
+    }
+
+    .christmas-card-page .persons-name {
+        width: 100%;
+        font-size: 40px;
+        line-height: 40px;
+    }
+
+    .christmas-card-page .persons-name {
+        width: 70%;
+        font-size: 22px;
+        line-height: 28px;
+        top:0;
+    }
+
+    .christmas-card-page .persons-message p {
+        font-size: 20px !important;
+    }
+
+    .button, .application-form .sq-form-submit {
+        font-size: 19px !important;
+    }
+}

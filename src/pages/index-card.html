@@ -3,9 +3,13 @@
 
   <div id="snow"></div>
 
-  <div class="vimeo-wrapper">
-     <iframe id="vimeo_player_christmas" src="https://player.vimeo.com/video/769377439?api=1&autoplay=0&muted=1&loop=1&byline=0&title=0" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen allow="autoplay"></iframe>
-  </div>
+  <div class="vimeo-wrapper show-for-medium desktop-video">
+     <iframe id="vimeo_player_christmas" src="https://player.vimeo.com/video/769377439?api=1&autoplay=0&muted=1&loop=0&byline=0&title=0" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen allow="autoplay"></iframe>
+    </div>
+
+    <div class="vimeo-wrapper hide-for-medium mobile-video">
+        <iframe id="vimeo_player_christmas" src="https://player.vimeo.com/video/771624404?api=1&autoplay=0&muted=1&loop=0&byline=0&title=0" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen allow="autoplay"></iframe>
+    </div>
 
 
   <div class="page-content">
@@ -21,7 +25,8 @@
             </div>
             <br />
 
-            <span class="button play-video">Open Card</span>
+            <span class="button play-video desktop-play show-for-medium">Open Card</span>
+            <span class="button play-video mobile-play hide-for-medium">Open Card</span>
 
             <h1 class="persons-name">Mohammod Michael Sharon</h1>
 
