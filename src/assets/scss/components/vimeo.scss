@@ -324,6 +324,7 @@
     padding: 2em 4em 2em;
     border-radius: 60px;
     text-align: left;
+    position: relative;
     // box-shadow: 0 14px 28px rgba(0,0,0,0.25), 0 10px 10px rgba(0,0,0,0.22);
   }
 
@@ -340,9 +341,13 @@
   }
 
   .form-container {
-    padding: 4em 0em;
+    padding: 5em 0em 15em;
     color: white;
     text-align: left !important;
+
+    h1, h2 {
+      text-align: left !important;
+    }
 
     label {
       color: white;
@@ -432,27 +437,25 @@
  }
  
  .persons-name {
-   position: absolute;
-   top: 45%;
-   left: 0;
-   right: 0;
-   width: 50%;
-   max-width: 500px;
-   z-index: 99999;
-   color: #ff2a2b;
+  position: absolute;
+  top: 20%;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  width: 50%;
+  max-width: 500px;
+  z-index: 99999;
+  color: #ff2a2b;
   margin: auto;
-   text-align: center;
-   text-transform: uppercase;
+  text-align: center;
+  text-transform: uppercase;
    display: none;
-   background-color: white;
   
-   
-
    h2, h1 {
     font-size: 60px !important;
     background-color: white;
-    padding: 20px;
-    margin-top: 10px;
+    padding: 0px 20px;
+    margin-top: 0px;
    }
    
 
@@ -526,13 +529,6 @@
 }
 
  .persons-message {
-  position: absolute;
-  top: 32%;
-  left: 0;
-  right: 0;
-  bottom: 0;
-  width: 55%;
-  max-width: 600px;
   z-index: 99999;
   color: #ffffff;
  margin: auto;
@@ -541,6 +537,7 @@
   
   p {
     font-size: 18px !important;
+    max-width: 100%;
   }
 
   .lead {
