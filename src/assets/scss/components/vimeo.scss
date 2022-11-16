@@ -330,14 +330,7 @@
   .content-container {
     text-align: center;
 
-    a {
-      color: white;
-      text-decoration: underline;
-    }
-
-    .button {
-      text-decoration: none;
-    }
+    
 
     p {
       max-width: 70%;
@@ -353,6 +346,19 @@
 
     label {
       color: white;
+    }
+
+    a {
+      color: white;
+      text-decoration: underline;
+    }
+
+    p {
+      max-width: 100%;
+    }
+
+    .button {
+      text-decoration: none;
     }
 
     thead, tbody, tfoot, table,  tbody tr:nth-child(even), table tr, table td {
