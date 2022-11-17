@@ -443,7 +443,7 @@
   right: 0;
   bottom: 0;
   width: 60%;
-  max-width: 500px;
+  max-width: 400px;
   z-index: 99999;
   color: #ff2a2b;
   margin: auto;
@@ -453,6 +453,7 @@
   line-height:40px;
    display: none;
    z-index: 999999;
+    height: fit-content;
   
    h2, h1 {
     font-size: 60px !important;
