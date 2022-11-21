@@ -616,3 +616,11 @@
     padding: 2em 2em 1em;
     margin-bottom: 3em;
 }
+
+.snowflake {
+  position: absolute;
+  width: 10px;
+  height: 10px;
+  background: linear-gradient(white, white); /* Workaround for Chromium's selective color inversion */
+  border-radius: 50%;
+}
