@@ -35,7 +35,7 @@ $(document).foundation();
         player.ready().then(function() {
             player.setMuted(false);
             player.play();
-            $('.persons-name').delay(900).fadeIn().delay(3000).fadeOut();
+            $('.persons-name').fadeIn().delay(3000).fadeOut();
             $('.persons-message').delay(22000).fadeIn();
         });
 
@@ -61,7 +61,7 @@ $(document).foundation();
           player2.ready().then(function() {
               player2.setMuted(false);
               player2.play();
-              $('.persons-name').delay(900).fadeIn().delay(3000).fadeOut();
+              $('.persons-name').fadeIn().delay(3000).fadeOut();
               $('.persons-message').delay(22000).fadeIn();
           });
 
@@ -75,8 +75,9 @@ $(document).foundation();
         
     
         
-          
-
+        if ( $( "#snow" ).length ) {
+ 
+         
         let snowflakes_count = 200;
 
         // let base_css = ``; // Put your custom base css here
@@ -181,4 +182,8 @@ $(document).foundation();
         };
         
         // TODO add progress bar for slower clients
+       
+        }
+
+
         
