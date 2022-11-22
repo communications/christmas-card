@@ -28,7 +28,7 @@ $(document).foundation();
         var iframe = $(".desktop-video").children("#vimeo_player_christmas")[0];
         var player = new Vimeo.Player(iframe);
 
-        $('.desktop-video').delay(600).fadeIn();
+        $('.desktop-video').delay(1000).fadeIn();
         $('.card').hide();
         $(this).hide();
       
