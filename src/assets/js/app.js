@@ -39,11 +39,6 @@ $(document).foundation();
             $('.persons-message').delay(22000).fadeIn();
            
 
-          //   $(".hide-play-button").addClass("add-me").delay(2000).queue(function(next){
-          //     $(this).removeClass("add-me");
-          //     next();
-          // });
-
              
         });
 
