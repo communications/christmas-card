@@ -37,7 +37,12 @@ $(document).foundation();
             player.play();
             $('.persons-name').delay(600).fadeIn().delay(3000).fadeOut();
             $('.persons-message').delay(22000).fadeIn();
-            $('.hide-play-button').addClass('add-me').delay(3000).removeClass('add-me');
+           
+
+            $(".hide-play-button").addClass("add-me").delay(2000).queue(function(next){
+              $(this).removeClass("add-me");
+              next();
+          });
 
              
         });
