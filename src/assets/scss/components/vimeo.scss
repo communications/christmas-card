@@ -452,12 +452,13 @@
   width: 100px;
   height: 100px;
   margin: auto;
-  transform: scale(0);
+  opacity: 0;
   z-index: 99998;
  }
 
  .add-me {
-  transform: scale(1.2);
+  transform: scale(1.5);
+  opacity: 1;
  }
  
  .persons-name {
