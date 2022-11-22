@@ -28,7 +28,7 @@ $(document).foundation();
         var iframe = $(".desktop-video").children("#vimeo_player_christmas")[0];
         var player = new Vimeo.Player(iframe);
 
-        $('.desktop-video').fadeIn();
+        $('.desktop-video').delay(600).fadeIn();
         $('.card').hide();
         $(this).hide();
       
@@ -39,10 +39,10 @@ $(document).foundation();
             $('.persons-message').delay(22000).fadeIn();
            
 
-            $(".hide-play-button").addClass("add-me").delay(2000).queue(function(next){
-              $(this).removeClass("add-me");
-              next();
-          });
+          //   $(".hide-play-button").addClass("add-me").delay(2000).queue(function(next){
+          //     $(this).removeClass("add-me");
+          //     next();
+          // });
 
              
         });
