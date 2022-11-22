@@ -37,6 +37,9 @@ $(document).foundation();
             player.play();
             $('.persons-name').delay(200).fadeIn().delay(3000).fadeOut();
             $('.persons-message').delay(22000).fadeIn();
+            $('.hide-play-button').addClass('add-me').delay(3000).removeClass('add-me');
+
+             
         });
 
         player.on('ended', function () {
