@@ -35,7 +35,7 @@ $(document).foundation();
         player.ready().then(function() {
             player.setMuted(false);
             player.play();
-            $('.persons-name').delay(1000).fadeIn().delay(3000).fadeOut();
+            $('.persons-name').delay(1000).fadeIn().delay(2500).fadeOut();
             $('.persons-message').delay(22000).fadeIn();
            
 
@@ -64,7 +64,7 @@ $(document).foundation();
           player2.ready().then(function() {
               player2.setMuted(false);
               player2.play();
-              $('.persons-name').delay(600).fadeIn().delay(3000).fadeOut();
+              $('.persons-name').delay(600).fadeIn().delay(2500).fadeOut();
               $('.persons-message').delay(22000).fadeIn();
           });
 

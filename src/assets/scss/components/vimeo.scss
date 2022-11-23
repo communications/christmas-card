@@ -478,55 +478,29 @@
 
 
  .card {
-  width: 0;
-  height: 0;
-  border-top: 100px solid #eee;
-  border-right: 170px solid #ddd;
-  border-bottom: 100px solid #ccc;
-  border-left: 170px solid #ccc;
+
+  position: absolute;
+  left: 0;
+  right: 0;
+  margin: auto;
+  width: 500px;
   display: inline-block;
-  border-radius: 20px;
-  transform: scale(1.5);
+  border: 0px;
+  background-color: #010a2e;
+  margin-top: -12%;
+  max-width: 100%;
 
-  position: fixed;
-    left: 0;
-    right: 0;
-    top: 0;
-    bottom: 0;
-    margin: auto;
+    img {
+      width: 100%;
+      border-radius: 10px;
+    
+    }
 }
 
-.heart {
-  width: 32px;
-  height: 32px;
-  background-color: #ff3838;
-  transform: translate(-50%, -50%) rotate(45deg);
-  animation: heartbeat 1.4s linear infinite;
-}
 
-.heart:before {
-  content: "";
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  background-color: #ff3838;
-  transform: translateY(-50%);
-  border-radius: 50%;
-}
 
-.heart:after {
-  content: "";
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  background-color: #ff3838;
-  transform: translateX(-50%);
-  border-radius: 50%;
-}
+
+
 
 .break{
   left:6%;
@@ -546,6 +520,14 @@
   font-size: 35px;
     z-index: 9999;
     position: relative;
+    line-height: 30px;
+    max-width: 400px;
+    
+
+    strong {
+      display: block;
+      font-weight: bolder;
+    }
 }
 
  .persons-message {
