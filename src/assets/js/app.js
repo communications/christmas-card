@@ -54,7 +54,7 @@ $(document).foundation();
         $('.mobile-play').bind('click keypress', function (e) {
           e.preventDefault();
   
-          var iframe2 = $(".mobile-video").children("#vimeo_player_christmas")[0];
+          var iframe2 = $(".mobile-video").children("#vimeo_player_christmas_2")[0];
           var player2 = new Vimeo.Player(iframe2);
 
           $('.mobile-video').fadeIn();
