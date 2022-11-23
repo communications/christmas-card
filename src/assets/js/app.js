@@ -57,14 +57,14 @@ $(document).foundation();
           var iframe2 = $(".mobile-video").children("#vimeo_player_christmas_2")[0];
           var player2 = new Vimeo.Player(iframe2);
 
-          $('.mobile-video').fadeIn();
+          $('.mobile-video').delay(700).fadeIn();
           $('.card').hide();
         $(this).hide();
         
           player2.ready().then(function() {
               player2.setMuted(false);
               player2.play();
-              $('.persons-name').delay(600).fadeIn().delay(2500).fadeOut();
+              $('.persons-name').delay(1000).fadeIn().delay(2500).fadeOut();
               $('.persons-message').delay(22000).fadeIn();
           });
 
