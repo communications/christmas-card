@@ -43,6 +43,7 @@
         font-size: 22px;
         line-height: 28px;
         top:0;
+        margin-top: -5px;
     }
 
     .christmas-card-page .persons-message p {
@@ -81,8 +82,13 @@
     .persons-message {
         
             background-color: #000647;
-            padding: 25px 30px;
+            padding: 35px 30px;
             border-radius: 20px;
+            width: 90%;
+
+            p {
+                font-size: 17px !important;
+            }
         
     }
 }
