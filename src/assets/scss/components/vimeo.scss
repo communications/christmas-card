@@ -499,9 +499,7 @@
 
 
 
-body .smaller-text {
-  font-size: 12px !important;
-}
+
 
 
 .break{
@@ -624,4 +622,8 @@ body .smaller-text {
   height: 10px;
   background: linear-gradient(white, white); /* Workaround for Chromium's selective color inversion */
   border-radius: 50%;
+}
+
+body .smaller-text {
+  font-size: 12px !important;
 }
