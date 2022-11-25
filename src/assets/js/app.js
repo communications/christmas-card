@@ -28,7 +28,7 @@ $('.desktop-play').bind('click keypress', function (e) {
     var iframe = $(".desktop-video").children("#vimeo_player_christmas")[0];
     var player = new Vimeo.Player(iframe);
 
-    $('.desktop-video').delay(700).fadeIn();
+    $('.desktop-video').delay(2000).fadeIn('slow');
     $('.card').hide();
     $(this).hide();
 
@@ -39,13 +39,21 @@ $('.desktop-play').bind('click keypress', function (e) {
 
     player.on('play', function() {
         console.log('played the video!');
-        $('.persons-name').delay(1800).fadeIn().delay(1500).fadeOut();
-        $('.persons-message').delay(22000).fadeIn();
+        $('.persons-name').delay(5500).fadeIn().delay(1500).fadeOut();
+        $('.persons-message').delay(26000).fadeIn();
+
+        
     });
+
+    player.on('timeupdate', function () {
+        console.log(this.currentTime());
+      });
 
     player.on('ended', function () {
         $('.desktop-video').fadeOut();
     });
+
+    
 });
 
 
@@ -60,7 +68,7 @@ $('.mobile-play').bind('click keypress', function (e) {
     var iframe2 = $(".mobile-video").children("#vimeo_player_christmas_2")[0];
     var player2 = new Vimeo.Player(iframe2);
 
-    $('.mobile-video').delay(700).fadeIn();
+    $('.mobile-video').delay(2000).fadeIn();
     $('.card').hide();
     $(this).hide();
 
@@ -70,8 +78,8 @@ $('.mobile-play').bind('click keypress', function (e) {
     });
 
     player2.on('play', function() {
-        $('.persons-name').delay(1800).fadeIn().delay(1500).fadeOut();
-        $('.persons-message').delay(22000).fadeIn();
+        $('.persons-name').delay(5500).fadeIn().delay(1500).fadeOut();
+        $('.persons-message').delay(26000).fadeIn();
     });
 
     player2.on('ended', function () {
