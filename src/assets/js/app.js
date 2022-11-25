@@ -39,7 +39,7 @@ $('.desktop-play').bind('click keypress', function (e) {
 
     player.on('play', function() {
         console.log('played the video!');
-        $('.persons-name').delay(5500).fadeIn().delay(1500).fadeOut();
+        $('.persons-name').delay(6500).fadeIn('slow').delay(1500).fadeOut();
         $('.persons-message').delay(26000).fadeIn();
 
         
@@ -78,7 +78,7 @@ $('.mobile-play').bind('click keypress', function (e) {
     });
 
     player2.on('play', function() {
-        $('.persons-name').delay(5500).fadeIn().delay(1500).fadeOut();
+        $('.persons-name').delay(6500).fadeIn('slow').delay(1500).fadeOut();
         $('.persons-message').delay(26000).fadeIn();
     });
 
