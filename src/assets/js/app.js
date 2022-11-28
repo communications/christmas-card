@@ -25,36 +25,36 @@ $(document).foundation();
 
 
 //Play Button on the hero desktop
-// $('.desktop-play').bind('click keypress', function (e) {
-//     e.preventDefault();
+$('.desktop-play').bind('click keypress', function (e) {
+    e.preventDefault();
 
-//     var iframe = $(".desktop-video").children("#vimeo_player_christmas")[0];
-//     var player = new Vimeo.Player(iframe);
+    var iframe = $(".desktop-video").children("#vimeo_player_christmas")[0];
+    var player = new Vimeo.Player(iframe);
 
     
-//     $('.card').hide();
-//     $(this).hide();
-//     $('.desktop-video').delay(2000).fadeIn();
+    $('.card').hide();
+    $(this).hide();
+    $('.desktop-video').delay(2000).fadeIn();
         
     
-//     player.ready().then(function () {
-//         player.setMuted(false);
-//         player.play();
-//     });
+    player.ready().then(function () {
+        player.setMuted(false);
+        player.play();
+    });
 
-//     player.on('play', function() {
-//         console.log('played the video!');
-//         $('.persons-name').delay(6500).fadeIn('slow').delay(1500).fadeOut();
-//         $('.persons-message').delay(26000).fadeIn();
+    player.on('playing', function() {
+        console.log('played the video!');
+        $('.persons-name').delay(6500).fadeIn('slow').delay(1500).fadeOut();
+        $('.persons-message').delay(26000).fadeIn();
 
         
-//     });
+    });
 
-//     player.on('ended', function () {
-//         $('.desktop-video').fadeOut();
-//     });
+    player.on('ended', function () {
+        $('.desktop-video').fadeOut();
+    });
 
-// });
+});
 
 
 
@@ -79,22 +79,34 @@ $('.mobile-play').bind('click keypress', function (e) {
         });
 
 
-        player2.on('timeupdate', function(data){
-            var time = (data.percent);
+        // player2.on('timeupdate', function(data){
+        //     var time = (data.percent);
 
-            if (time >= 0.001 && time <= 0.002  ) {
+        //     if (time >= 0.001 && time <= 0.002  ) {
+        //         $('.mobile-video').delay(2000).fadeIn();
+        //         $('.persons-name').delay(6500).fadeIn('slow').delay(1500).fadeOut();
+        //         $('.persons-message').delay(26000).fadeIn();
+
+        //         // console.log(time)
+        //     };
+
+        //     console.log(data.percent)
+        //     // console.log(time)
+
+        
+        //   });
+
+          player2.on('playing', function(data){
+           
+           
                 $('.mobile-video').delay(2000).fadeIn();
                 $('.persons-name').delay(6500).fadeIn('slow').delay(1500).fadeOut();
                 $('.persons-message').delay(26000).fadeIn();
 
-                // console.log(time)
-            };
+               
+          
 
-            // console.log(data.percent)
-            // console.log(time)
-
-           
-            
+             // console.log(time)
           });
 
 
