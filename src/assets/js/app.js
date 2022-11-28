@@ -101,7 +101,7 @@ $('.mobile-play').bind('click keypress', function (e) {
            
                 $('.mobile-video').delay(2000).fadeIn();
                 $('.persons-name').delay(6500).fadeIn('slow').delay(1500).fadeOut();
-                $('.persons-message').delay(26000).fadeIn();
+                $('.persons-message').delay(29000).fadeIn();
 
                
           
