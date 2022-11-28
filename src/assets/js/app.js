@@ -69,36 +69,24 @@ $('.mobile-play').bind('click keypress', function (e) {
     var player2 = new Vimeo.Player(iframe2);
     
 
-    $('.card').hide();
-    $(this).hide();
-
-   
-
-        $('.mobile-video').delay(2000).fadeIn();
+        $('.card').hide();
+        $(this).hide();
+        
 
         player2.ready().then(function () {
             player2.setMuted(false);
             player2.play();
         });
 
-        
-
-        player2.on('play', function() {
-            // $('.persons-name').delay(6500).fadeIn('slow').delay(1500).fadeOut();
-            // $('.persons-message').delay(26000).fadeIn();
-        });
-        
-        
 
         player2.on('timeupdate', function(data){
             var time = (data.seconds);
 
             if (time >= 0.15) {
+                $('.mobile-video').delay(2000).fadeIn();
                 $('.persons-name').delay(6500).fadeIn('slow').delay(1500).fadeOut();
                 $('.persons-message').delay(26000).fadeIn();
             } 
-
-            // console.log(time);
             
           });
 
