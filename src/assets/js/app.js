@@ -34,8 +34,7 @@ $('.desktop-play').bind('click keypress', function (e) {
     
     $('.card').hide();
     $(this).hide();
-    
-    player.getBuffered().then(function () {
+    $('.desktop-video').delay(2000).fadeIn();
         
     
     player.ready().then(function () {
@@ -57,9 +56,6 @@ $('.desktop-play').bind('click keypress', function (e) {
 
 });
 
-    
-});
-
 
 
 
@@ -71,11 +67,12 @@ $('.mobile-play').bind('click keypress', function (e) {
 
     var iframe2 = $(".mobile-video").children("#vimeo_player_christmas_2")[0];
     var player2 = new Vimeo.Player(iframe2);
+    
 
     $('.card').hide();
     $(this).hide();
 
-    player2.getBuffered().then(function () {
+   
 
         $('.mobile-video').delay(2000).fadeIn();
 
@@ -84,17 +81,31 @@ $('.mobile-play').bind('click keypress', function (e) {
             player2.play();
         });
 
+        
+
         player2.on('play', function() {
-            $('.persons-name').delay(6500).fadeIn('slow').delay(1500).fadeOut();
-            $('.persons-message').delay(26000).fadeIn();
+            // $('.persons-name').delay(6500).fadeIn('slow').delay(1500).fadeOut();
+            // $('.persons-message').delay(26000).fadeIn();
         });
+        
+        
+
+        player2.on('timeupdate', function(data){
+            var time = (data.seconds);
+
+            if (time >= 0.15) {
+                $('.persons-name').delay(6500).fadeIn('slow').delay(1500).fadeOut();
+                $('.persons-message').delay(26000).fadeIn();
+            } 
+
+            // console.log(time);
+            
+          });
+
 
         player2.on('ended', function () {
             $('.mobile-video').fadeOut();
         });
-
-    });
-
 
 
 });
