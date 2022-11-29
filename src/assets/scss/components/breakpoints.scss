@@ -4,6 +4,10 @@
         padding:0em;
     }
 
+    .christmas-card-page .vimeo-wrapper {
+        position: fixed;
+    }
+
     .christmas-card-page h1 {
         font-size: 35px;
         line-height: 45px;
@@ -90,5 +94,9 @@
                 font-size: 17px !important;
             }
         
+    }
+
+    body .smaller-text {
+        font-size: 12px!important;
     }
 }
