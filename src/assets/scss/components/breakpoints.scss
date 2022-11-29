@@ -100,7 +100,25 @@
         
     }
 
+    .christmas-card-page .persons-name {
+        position: fixed;
+        top:47%;
+    }
+
     body .smaller-text {
         font-size: 12px!important;
     }
+
+    .christmas-card-page .persons-message .lead {
+        font-size: 18px !important;
+    }
+
+    .christmas-card-page .persons-message p {
+        font-size: 16px !important;
+    }
+
+    .christmas-card-page .persons-message {
+        font-size: 15px !important;
+    }
+
 }
