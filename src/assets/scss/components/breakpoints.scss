@@ -1,5 +1,9 @@
 @include breakpoint (small only) {
 
+    .christmas-card-page {
+        overflow: hidden;
+    }
+    
     .christmas-card-page .content-container {
         padding:0em;
     }
